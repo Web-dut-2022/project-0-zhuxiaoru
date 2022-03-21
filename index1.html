@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			
+			form .text {
+				display: inline-block;
+				border: 0;
+				width: 260px;
+				height: 35px;
+				font-size: 14px;
+				outline: none;
+				
+				border: 2px solid #3a70af;
+			}
+			
+			form .search {
+				
+				width: 90px;
+				height: 38px;
+				border: 0;
+				outline: none;
+				cursor: pointer;
+				/*   cursor: pointer;   鼠标悬停或点击时button时鼠标变成其他图标  */
+				text-align: center;
+				line-height: 40px;
+				background-color: #1763aa;
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+        <div id="d1">
+            <table border="0" class="t1">
+                <tr>
+                    <td>
+                        <a href="/index.html">
+                            <p class="p1">Baidu Home</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+<div id="d3">
+    <form target="_blank" method="get" action="https://image.baidu.com/search/index">
+        <input type="hidden" name="tn" value="baiduimage">
+        <input type="text" placeholder="请输入关键词" name="word" class="text" />
+        <input type="submit" value="搜索" class="search" onclick="document.formName.submit()">
+        
+    </form>
+</div>
+	</body>
+</html>
+
