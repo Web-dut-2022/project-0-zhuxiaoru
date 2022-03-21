@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			
+			form .text {
+				display: inline-block;
+				border: 0;
+				width: 260px;
+				height: 35px;
+				font-size: 14px;
+				outline: none;
+				
+				border: 2px solid #3a70af;
+			}
+			
+			form .search {
+				
+				width: 90px;
+				height: 38px;
+				border: 0;
+				outline: none;
+				cursor: pointer;
+				/*   cursor: pointer;   鼠标悬停或点击时button时鼠标变成其他图标  */
+				text-align: center;
+				line-height: 40px;
+				background-color: #1763aa;
+				color: #FFFFFF;
+			}
+			.d1{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+
+			}
+		
+		</style>
+	</head>
+	<body>
+        <div id="d1">
+            <table border="0" class="t1">
+                <tr>
+                    <td>
+                        <a href="/index.html">
+                            <p class="p1">Baidu Home</p>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+<div id="d3">
+    <form target="_blank" method="get" action="https://baidu.com/s">
+        <input type="hidden" name="tn" value="baiduimage">
+        <input type="text" name="q1" placeholder="All these words..">
+        <input type="text" name="q2" placeholder="The exact word or phrase..">
+        <input type="text" name="q3" placeholder="Any of these words..">
+        <input type="text" name="q4" placeholder="None of these words..">
+        <input type="submit" value="搜索" class="search" onclick="document.formName.submit()">
+        
+    </form>
+</div>
+	</body>
+</html>
+
